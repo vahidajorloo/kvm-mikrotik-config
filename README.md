@@ -1,7 +1,10 @@
 # kvm-mikrotik-config
 1- kvm must installed on ubuntu 22
+
 2- we need 2 ethernet links on virtualizor server, one for internet that is connected to network switch and another one that is connected to ILO switch.
+
 3- we create 2 network bridges:
+
 + viibr0 for internet that is called permanent bridge in virtulizor site (with eno49 or eno50)
 + viifbr-ilo for accessing to ILO switch (with eno1 to eno4)
 + we need to download the mikrotik image for kvm with qcow2 format that is available in internet and place it in /var/virtualizor/kvm/mikrotik.qcow2
